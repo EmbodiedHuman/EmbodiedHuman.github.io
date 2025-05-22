@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Who and Where Am I? Embodied Cognition-Aware Virtual Humans">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Who and Where Am I? Embodied Cognition-Aware Virtual Humans</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <meta property="og:site_name" content="Who and Where Am I? \\
+  Embodied Cognition-Aware Virtual Humans" />
+  <meta property="og:title" content="Who and Where Am I? \\
+  Embodied Cognition-Aware Virtual Humans" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+
+  <meta property="article:publisher" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Who and Where Am I? \\
+  Embodied Cognition-Aware Virtual Humans" />
+</head>
+
+
+<body>
+  <section class="hero is-link is-fullheight video" style="overflow: hidden; position:relative;">
+    <div class="hero-video" style="height: 100%; width: 177.77777778vh; min-width: 100%;min-height: 56.25vw;">
+      <video playsinline autoplay muted loop>
+        <source src=" ./resources/teaser.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-video is-hidden-tablet is-inline-block-mobile"
+      style="height: 154.28571428vw; width: 100%; min-width:64.81481481vh;min-height:100%;">
+      <video playsinline autoplay muted loop>
+        <source src="./resources/teaser.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="overlay"></div>
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head is-hidden-mobile">
+      <header class="navbar">
+        <div class="container is-size-5">
+          <div class="navbar-menu">
+            <div class="navbar-end">
+<!--               <a class="navbar-item pl-4 pr-4" href="/">
+                <span class="icon" style="margin-right:5px;">
+                  <img src="./static/images/pdf.svg" alt="PDF" />
+                </span>
+                <span>Paper</span>
+              </a> -->
+                <a class="navbar-item  pl-4 pr-4" href="./resources/embodiedhuman.pdf">
+                <span class="icon" style="margin-right:5px;">
+                  <img src="./static/images/pdf.svg" alt="Paper" />
+                </span>
+                <span>Paper</span> </a>
+              <span class="navbar-item  pl-4 pr-4">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1 publication-title is-size-1-mobile" style="font-size: 6rem;">
+          Who and Where Am I? Embodied Cognition-Aware Virtual Humans
+        </h1>
+        <span class="author-block" style="font-size: 2rem;">
+          <a> Anonymous Authors </a>
+        </span>
+                <h1 class="is-2 is-italic is-size-4-mobile" style="font-size: 2rem;">
+        </h1>
+        <h1 class="is-2 is-italic is-size-4-mobile" style="font-size: 2rem;">
+        </h1>
+        <div class="column has-text-centered is-hidden-tablet">
+          <div class="publication-links">
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Hero footer: will stick at the bottom -->
+  </section>
+
+<section class="section">
+  <div class="container" style="width: 50%">
+    <h2 class="title is-2" style="text-align: center;">Audio Overview <span style="font-size: 0.8em;">(generated using <a href="https://notebooklm.google.com/">NotebookLM</a>)</span></h2>
+    <div class="columns is-centered">
+      <div class="content has-text-justified scroll-element">
+          <div class="audio-container">
+            <audio controls>
+                <source src="./resources/EmbodiedHuman.wav" type="audio/wav">
+            </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="column is-centered has-text-centered">
+  <video id="myVideo" autoplay muted playsinline loop controls
+    src="./resources/teaser-video.mp4"
+    poster="./resources/loading-icon.gif"
+    style="width: 50%; border: 1px solid #bbb; border-radius: 10px; margin: 1%;">
+  </video>
+</div>
+
+<script>
+  // Wait for a user interaction to unmute and replay video with sound
+  window.addEventListener('click', () => {
+    const video = document.getElementById('myVideo');
+    if (video.muted) {
+      video.muted = false;
+      video.play(); // ensure it continues playing with sound
+    }
+  }, { once: true }); // run this only once
+</script>
+</section>
+
+
+<h2 class="title is-2" style="text-align: center;">Project Abstract</h2>
+<section class="section">
+  <div class="container" style="width:60%;">
+
+    <p style="text-align: justify;">
+
+
+        <div class="container" style="width:95%;">
+    <div class="columns is-centered">
+      <img src="./resources/teaser.png" ></img>
+    </div>
+        <p>
+  <!--     <b>Hiking Requires Three Keys.</b>  -->
+    </p>
+       </div>
+
+       Building virtual humans requires more than just realistic appearances and diverse movements; it necessitates simulating the intricate interplay between internal cognitive states and external environments, as framed by the concept of embodied cognition. In this paper, we propose an embodied cognitive architecture, EmbodiedHuman, that captures this interaction by integrating "Mind" - a structured cognitive module, with motor execution to drive the virtual human's behavior within an interactive 3D environment. To enable integrated embodiment over both cognitive states and physical execution, we introduce three novel modules: 
+       (1) a cognition-inspired Mind structure, which models high-level reasoning and decision-making through key causal variables (value, belief, desire, and intention);  
+       (2) an action execution module, which translates internal intentions into embodied movements, enabling physically grounded interactions; 
+       and (3) an exploration module, which empowers the agent to actively explore the environment and update its mental states through feedback of actions. Our approach allows virtual humans to continuously adapt, learn, and evolve their behavior in response to environmental changes, supporting dynamic and natural human-like interactions in the long horizon. Extensive experiments demonstrate the flexibility and scalability of our method in simulating individualized, daily-level behaviors in unknown environments.
+       We hope our EmbodiedHuman can serve as a baseline prototype to advance research in embodied cognition and virtual human modeling.
+    </p>
+  </div>
+</section>
+
+<h2 class="title is-2" style="text-align: center;">Our Approach - EmbodiedHuman</h2>
+<section class="section">
+  <div class="container" style="width:60%;">
+    <div class="columns is-centered">
+      <img src="./resources/framework.png" ></img>
+    </div>
+    <p>
+      <b>EmbodiedHuman Framework Overview.</b> To simulate a truly "virtual human" in an unfamiliar environment, 
+      we design an embodied cognitive architecture, EmbodiedHuman, shaping the mind with <i>value</i>, <i></i>belief</i>, <i>desire</i>, and <i>intention</i>, and coupling cognition with actions for embodied interaction. 
+      Starting from the value (virtual human profile) and the belief (dynamic scene graph), we leverage an LLM to generate temporary desires, which are translated into concrete intentions. 
+      Two interactive modules are proposed to enable embodied action execution and dynamic environment exploration. </p>
+  </div>
+</section>
+
+<h2 class="title is-2" style="text-align: center;">Analysis of EmbodiedHuman</h2>
+<section class="section">
+  <div class="container" style="width:60%;">
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/values.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    <p>
+      <b>Value influences virtual human behavior.</b> 
+      Two virtual humans (i.e., Ben and Rachel) tend to eat different foods (Chip or Tomato) according to their <i>values</i>.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="width:60%;">
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/belief.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    <p>
+      <b>Environment influences virtual human behavior.</b> 
+      Armin chooses different assets (Laptop or Cellphone) to fulfill its desire based on its belief about the environment.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="width:60%;">
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/scene_dyna.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    <p>
+      <b>Scene dynamics influence virtual human behavior.</b> 
+      The virtual human chooses to eat the Apple when the Tomato has been eaten.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="width:60%;">
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/explore.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    <p>
+      <b>Environmental Exploration. </b> 
+      The virtual human actively explores the environment and updates its desire.
+    </p>
+  </div>
+</section>
+
+</section>
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <h2 class="titile">BibTeX</h2>
+      <p style="text-align: justify;">
+      Website template modified from incredible UMI-On-Legs, NeRFies, Scaling Up Distilling Down, and AnyCar.
+
+      This website is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+     </p>
+  </div>
+</section>
+
+</body>
+</html>
