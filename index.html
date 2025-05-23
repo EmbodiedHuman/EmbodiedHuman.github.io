@@ -134,6 +134,33 @@
 </script>
 </section>
 
+<h2 class="title is-2" style="text-align: center;">Why Embodied Human is Important?</h2>
+<section class="section">
+  <div class="container" style="width:50%;">
+
+    <p style="text-align: justify;">
+      Generating virtual humans that can interact with the world in a natural and intuitive way is a challenging task, 
+      which has important applications in various fields, including virtual reality, simulation, and robotics.
+      Traditional research in this domain has primarily focused on creating realistic appearances and replicating diverse human movements.
+      However, these cannot define a truly <i>virtual human</i>.
+      A <i>virtual human</i> requires cognitive abilities where the mind drives the body to interact with the environment, and in turn, these interactions shape the mind.
+      This is our focus in this work.
+    </p>
+  </div>
+</section>
+
+<h2 class="title is-2" style="text-align: center;">The Challenges for Embodied Human</h2>
+<section class="section">
+  <div class="container" style="width:50%;">
+
+    <p style="text-align: justify;">
+      <b>(1) Cognitive Architecture.</b> How to simulate the complex, dynamic nature of a virtual human's internal mental states and their interplay with the external, ever-changing environment through the embodied actions?
+      <br>
+      <b>(2) Embodied Action.</b> How can the virtual human physically enact its intentions through its body, interact with the environment, and, in turn, allow these interactions to shape its mental states?
+    </p>
+  </div>
+</section>
+
 
 <h2 class="title is-2" style="text-align: center;">Project Abstract</h2>
 <section class="section">
@@ -147,7 +174,6 @@
       <img src="./resources/teaser.png" ></img>
     </div>
         <p>
-  <!--     <b>Hiking Requires Three Keys.</b>  -->
     </p>
        </div>
 
@@ -171,6 +197,21 @@
       we design an embodied cognitive architecture, EmbodiedHuman, shaping the mind with <i>value</i>, <i></i>belief</i>, <i>desire</i>, and <i>intention</i>, and coupling cognition with actions for embodied interaction. 
       Starting from the value (virtual human profile) and the belief (dynamic scene graph), we leverage an LLM to generate temporary desires, which are translated into concrete intentions. 
       Two interactive modules are proposed to enable embodied action execution and dynamic environment exploration. </p>
+  </div>
+</section>
+
+<h2 class="title is-2" style="text-align: center;">Action Execution</h2>
+<section class="section">
+  <div class="container" style="width:60%;">
+    <div class="columns is-centered">
+      <img src="./resources/gmld.png" style="width:60%"></img>
+    </div>
+    <p>
+      <b>Overview of the action execution module.</b> 
+      Text controls the motion style of Global Motion Latent Diffusion (GMLD). 
+      The diffusion process is further guided by gradients from spatial constraints, 
+      where red curves indicate sparse joint locations (taking root and hand joints as examples) and green arrays represent global orientation.
+    </p>
   </div>
 </section>
 
